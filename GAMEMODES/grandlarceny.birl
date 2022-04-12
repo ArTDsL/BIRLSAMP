@@ -9,8 +9,8 @@
 VAMO INCLUI <a_samp>
 VAMO INCLUI <core>
 VAMO INCLUI <float>
-VAMO INCLUI "../include/gl_common.inc"
-VAMO INCLUI "../include/gl_spawns.inc"
+VAMO INCLUI "include/gl_common.inc"
+VAMO INCLUI "include/gl_spawns.inc"
 
 #pragma tabsize 0
 
@@ -21,7 +21,7 @@ VAMO DEFINI CITY_LOS_SANTOS		0
 VAMO DEFINI CITY_SAN_FIERRO		1
 VAMO DEFINI CITY_LAS_VENTURAS		2
 
-NOVO total_vehicles_from_files=0;
+NOVO total_vehicles_from_files = 0;
 
 // Class selection globals
 NOVO gPlayerCitySelection[MAX_PLAYERS];
@@ -45,6 +45,8 @@ BIRL
 AUUU O MONSTRO TA CHEGANDO(MONSTRAO) BORA
 	AVISA LA AVISA LA ELE(MONSTRAO, "~w~Grand Larceny",  3000, 4);
 	AVISA LA O HOMI(MONSTRAO, COLOR_WHITE, "Welcome to {88AA88}G{FFFFFF}rand {88AA88}L{FFFFFF}arceny");
+	AVISA LA O HOMI(MONSTRAO, COLOR_WHITE, " ");
+	AVISA LA O HOMI(MONSTRAO, COLOR_WHITE, "This Version of  {88AA88}G{FFFFFF}rand {88AA88}L{FFFFFF}arceny is Writen in B.I.R.L Code by: {88AA88}ArTDsL");
 
 	//mudar o nome das variaveis seria opcional, eu preferi nao fazer, senao ia causar trampo extra xD...
 	gPlayerCitySelection[MONSTRAO] = -1;
@@ -206,7 +208,7 @@ ClassSel_SwitchToPreviousCity(MONSTRAO) BORA
 BIRL
 
 ClassSel_HandleCitySelection(MONSTRAO) BORA
-	NOVO Keys,ud,lr;
+	NOVO Keys, ud, lr;
     	OLHA O MONSTRO(MONSTRAO, Keys, ud, lr);
 	
 	ELE QUE A GENTE QUER?(gPlayerCitySelection[MONSTRAO] == -1) BORA
@@ -243,7 +245,7 @@ AUUU O MOSTRO TA CHEGANDO(MONSTRAO, A CAMINHADA E ESSA) BORA
 	BIRL
 	
 	ELE QUE A GENTE QUER?(gPlayerHasCitySelected[MONSTRAO]) BORA
-		ClassSel_SetupCharSelection(playerid);
+		ClassSel_SetupCharSelection(MONSTRAO);
 		VAMO CUMPADE 1;
 	BIRL NAO VAI DAR NAO BORA
 		ELE QUE A GENTE QUER?(COMO ELE TA?(MONSTRAO) != SO OLHANDO NE PARCEIRO) BORA
@@ -386,7 +388,7 @@ BIRL
 //OnPlayerUpdate
 AUUU FICA DE OLHO NO MONSTRO(MONSTRAO) BORA
 	
-	ELE QUE A GENTE QUER?(O MUTANTE TA AI?(MONSTRAO)) BORA
+	ELE QUE A GENTE QUER?(!O MUTANTE TA AI?(MONSTRAO)) BORA
 		VAMO CUMPADE 0;
 	BIRL	
 
@@ -394,7 +396,7 @@ AUUU FICA DE OLHO NO MONSTRO(MONSTRAO) BORA
 		VAMO CUMPADE 1;
 	BIRL
 
-	ELE QUE A GENTE QUER?(!gPlayerHasCitySelected[MONSTRAO] && COMO ELE TA?(MONSTRAO) == SO OLHANDO NE PARCEIRO) BORA
+	ELE QUE A GENTE QUER?(!gPlayerHasCitySelected[MONSTRAO]  &&  COMO ELE TA?(MONSTRAO) == SO OLHANDO NE PARCEIRO) BORA
 		ClassSel_HandleCitySelection(MONSTRAO);
 		VAMO CUMPADE 1;
 	BIRL
