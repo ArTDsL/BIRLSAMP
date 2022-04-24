@@ -23,4 +23,4 @@ An .AMX file will be generate inside the 2nd step folder!
 
 **Original BIRL Language Repo** @ [Bambam It's Show Time](https://github.com/BIRL-Language/)!
 
-###### Yeah, it's a joke, but the compiler really works, you can write a full gamemode on birl-language, check the "[test](https://github.com/ArTDsL/BIRLSAMP/blob/test/)" branch to see a [gamemode fully write in BIRL's](https://github.com/ArTDsL/BIRLSAMP/blob/test/GAMEMODES/grandlarceny.birl)!
+###### Yeah, it's a joke, but the compiler really works, you can write a full gamemode on birl-language, check the "[test](https://github.com/ArTDsL/BIRLSAMP/tree/test)" branch to see a [gamemode fully write in BIRL's](https://github.com/ArTDsL/BIRLSAMP/blob/test/GAMEMODES/grandlarceny.birl)!
