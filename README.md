@@ -5,6 +5,7 @@
 High-Level **BIRL**(BamBam It's Show Time) -> **PAWN** (pwn) to **AMX**.
 
 ```diff
+- W.I.P, some callbacks and functions are not passed yet...
 - ARGUMENT COMMANDS NOT AVAILABLE (YET)...
 ```
 
