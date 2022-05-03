@@ -27,7 +27,7 @@ void birlCompiler_message() {
 }
 
 void birlCompiler_help_message() {
-	clear_console();
+	system("CLS");
 	std::cout << "BIRLSAMP V1.0\t\t\t\t\t\t\t\t\t Copyright (c) 2022. ArTDsL.\n" << endl;
 	std::cout << "Como usar: birlsamp <comando> [parametro]\n" << endl;
 	std::cout << "Opcoes:" << endl;

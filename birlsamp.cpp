@@ -20,8 +20,6 @@
 
 using namespace std;
 
-
-
 int main(){
 	birlCompiler_message();
 	std::string gamemode_path;
