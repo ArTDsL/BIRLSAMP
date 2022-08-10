@@ -1,3 +1,12 @@
+## REPO CLOSED
+
+One day everything comes to an end! This software do what he has to do and now it's time to close this project!
+
+It was a funny thing program this, but i don't have time to support and maintain BIRLSAMP at this moment, maybe one day...
+
+## REPO CLOSED
+___
+
 # BIRLSAMP
 
 ###### Made in Brazil
